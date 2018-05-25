@@ -1,0 +1,244 @@
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*Dugme */
+.btn-danger {
+    border-radius: 0;
+    font-size: 14px;
+}
+
+/* Pozadina */
+#background {
+  background: url('../img/background.jpeg');
+  background-size: cover;
+  background-position: center ;
+  height: 100%;
+  width: 100%;
+}
+
+.center {
+    display: block;
+    margin-left: 600px;
+    margin-right: 600px;
+    width: 50%;
+}
+
+#background > #background-text{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#background > #background-text h1 {
+  color: white;
+  margin-top: +30px;
+}
+
+/* Sto da napravam */
+#stodanapravam {
+  color: white;
+  padding: 50px 0;
+}
+
+/*Sliki */
+#pics > #gif1, #gif2 {
+ display: inline-block;
+ float: left;
+ width: 50%;
+ color: #fff;
+}
+
+
+
+#pics > #gif1{
+  background: url('../img/energy.gif');
+  background-size: cover;
+  background-position: center bottom;
+  height: 450px;
+}
+
+#pics > #gif2{
+  background: url('../img/energy2.gif');
+  background-size: cover;
+  background-position: center bottom;
+  height: 450px;
+}
+
+/* Blog */
+#blog {
+ display: inline-block;
+ float: center;
+ width: 100%;
+ color: #fff;
+ background-color: #fff
+position: center;
+text-align: center;
+background-color: black;
+}
+
+/* Kontakt */
+#tekst {
+ display: inline-block;
+ float: center;
+ width: 100%;
+ color: #fff;
+ background-color: #fff
+position: center;
+text-align: center;
+background-color: black;
+}
+
+/*Navigacija Bar */
+.custom-navigation {
+  background: white;
+  height: 70px;
+  width: 100%;
+  z-index: 99999999;
+
+}
+.custom-navigation #links {
+  display: inline-block;
+  }
+
+.custom-navigation #links {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  top:0;
+  right: 0;
+  padding: 20px 25px 0 0;
+  }
+
+.custom-navigation #links >li{
+  display: inline-block;
+  color: #fff;
+  padding-right: 20px;
+  }
+
+
+/* Footer */
+footer
+{
+  text-align: center;
+  color:white;
+  background:black;
+  font-size: 15px;
+  font-style: italic;
+  padding-top: 5px;
+}
+
+/* Artikl 1 */
+
+article
+{
+  text-align: center;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 10px;
+
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+body {
+	font-family:"Open Sans", Helvetica, Arial, sans-serif;
+	font-weight:300;
+	font-size: 12px;
+	line-height:30px;
+	color:#777;
+	background:#0CF;
+}
+
+.container {
+	max-width:400px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+
+
+/* Optimizacija na Veb stranata za Drugi uredi (Media Queries) */
+@media(max-width: 767px)  {
+
+  .custom-navigation > #links {
+    display: none;
+    padding: 0;
+  }
+
+  #close {
+    display: none;
+  }
+
+  #background > #background-text h1 {
+    font-size: 24px;
+  }
+
+  .sm-dev-padding {
+    padding-top: 60px;
+  }
+  #pics > #gif1, #gif2 {
+   display: block;
+   width: 100%;
+  }
+}
